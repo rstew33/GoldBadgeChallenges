@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01Cafe", "01_Cafe\01Cafe.csproj", "{A780A1A2-B0B5-48A6-B115-6B34C7074AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeRepository", "CafeRepository\CafeRepository.csproj", "{F6DD560F-BF1C-4F69-892C-09BDD8E99F20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A780A1A2-B0B5-48A6-B115-6B34C7074AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A780A1A2-B0B5-48A6-B115-6B34C7074AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A780A1A2-B0B5-48A6-B115-6B34C7074AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A780A1A2-B0B5-48A6-B115-6B34C7074AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DD560F-BF1C-4F69-892C-09BDD8E99F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DD560F-BF1C-4F69-892C-09BDD8E99F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DD560F-BF1C-4F69-892C-09BDD8E99F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DD560F-BF1C-4F69-892C-09BDD8E99F20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D373D928-6000-4F86-8B2E-4F1B76CC1835}
+	EndGlobalSection
+EndGlobal
