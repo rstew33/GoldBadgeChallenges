@@ -29,6 +29,28 @@ namespace CafeRepository
         {
             return _listOfMenuItems;
         }
+        //update
+        public bool UpdateExistingItem(int menuID, MenuItem newMenuItem)
+        {
+            //find the menu item
+            MenuItem oldMenuItem = GetMenuByID(menuID);
+
+            //update the item
+            if( oldMenuItem != null)
+            {
+                oldMenuItem.ItemNumber = newMenuItem.ItemNumber;
+                oldMenuItem.ItemName = newMenuItem.ItemName;
+                oldMenuItem.ItemDescription = newMenuItem.ItemDescription;
+                oldMenuItem._listOfIngredients = newMenuItem._listOfIngredients;
+                oldMenuItem.ItemPrice = newMenuItem.ItemPrice;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         //delete
         public bool RemoveMenuItems(int menuID)
         {

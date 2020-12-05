@@ -30,8 +30,9 @@ namespace _01_Cafe
                 Console.WriteLine("Select a menu option:\n" +
                     "1. Add a new menu item\n" +
                     "2. See all menu items\n" +
-                    "3. Delete a menu item\n" +
-                    "4. Exit");
+                    "3. Update menu item\n" +
+                    "4. Delete a menu item\n" +
+                    "5. Exit");
 
                 // Get user input
                 string input = Console.ReadLine();
@@ -47,9 +48,12 @@ namespace _01_Cafe
                         DisplayAllMenuItems();
                         break;
                     case "3":
-                        DeleteMenuItem();
+                        UpdateMenuItem();
                         break;
                     case "4":
+                        DeleteMenuItem();
+                        break;
+                    case "5":
                         Console.WriteLine("Goodbye!");
                         keepRunning = false;
                         break;
@@ -83,7 +87,7 @@ namespace _01_Cafe
 
             //ingredients
             List<string> newMenuIngredients = new List<string>();
-            Console.WriteLine("Enter the ingredients of the menu item (xxx, xxx");
+            Console.WriteLine("Enter the ingredients of the menu item (xxx, xxx) ");
             newMenuIngredients.Add(Console.ReadLine());
 
             //price
@@ -110,6 +114,69 @@ namespace _01_Cafe
                 }
                 Console.WriteLine("\nItem price: " + menuItem.ItemPrice); //price
             }
+        }
+
+        //update menu item
+
+        private void UpdateMenuItem()
+        {
+            Console.Clear();
+            List<MenuItem> listOfMenuItems = _menuRepo.GetMenuItems();
+
+            foreach (MenuItem menuItem in listOfMenuItems)
+            {
+                Console.WriteLine("\nNumber: " + menuItem.ItemNumber); //number
+                Console.WriteLine("\nItem Item: " + menuItem.ItemName); //item
+                Console.WriteLine("\nItem Desc: " + menuItem.ItemDescription); //desc
+                foreach (string ingredient in menuItem._listOfIngredients) //ingredients
+                {
+                    Console.WriteLine("\nItem ingredients: " + ingredient);
+                }
+                Console.WriteLine("\nItem price: " + menuItem.ItemPrice); //price
+            }
+
+            Console.WriteLine("\nEnter the menu ID of the item you want to update: ");
+            int menuID = _menuRepo.GetID();
+
+            MenuItem newMenuItem = new MenuItem();
+
+            //Number
+            Console.WriteLine("Enter new item number: ");
+            int newMenuItemID = _menuRepo.GetID();
+            newMenuItem.ItemNumber = newMenuItemID;
+
+            //name
+            Console.WriteLine("Enter the item's new name: ");
+            string newMenuItemName = Console.ReadLine();
+            newMenuItem.ItemName = newMenuItemName;
+
+            //desc
+            Console.WriteLine("Enter the item's new description: ");
+            string newmenuItemDesc = Console.ReadLine();
+            newMenuItem.ItemDescription = newmenuItemDesc;
+
+            //ingredients
+            Console.WriteLine("Enter the item's new ingredients: ");
+            List<string> newMenuIngredients = new List<string>();
+            newMenuIngredients.Add(Console.ReadLine());
+            newMenuItem._listOfIngredients = newMenuIngredients;
+
+            //price
+            Console.WriteLine("Enter the item's new price:  ");
+            string priceAsString = Console.ReadLine();
+            double newMenuPrice = double.Parse(priceAsString);
+            newMenuItem.ItemPrice = newMenuPrice;
+
+            bool wasUpdated = _menuRepo.UpdateExistingItem(menuID, newMenuItem);
+            if (wasUpdated == true)
+            {
+                Console.WriteLine("Item Updated");
+            }
+            else
+            {
+                Console.WriteLine("Item was not updated");
+            }
+
         }
         // delete menu items
 
