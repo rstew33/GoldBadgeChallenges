@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\01_CafeTestMethods.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\01_CafeTestMethods.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\CafeRepository.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\CafeRepository.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\obj\Debug\01_CafeTestMethods.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\obj\Debug\01_CafeTestMethods.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\obj\Debug\01_CafeTestMethods.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\obj\Debug\01_CafeTestMethods.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChalleges\CafeTestMethods\obj\Debug\01_CafeTestMethods.pdb
