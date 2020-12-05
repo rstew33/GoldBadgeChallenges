@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CafeRepository\CafeRepository.csproj">
+    <ProjectReference Include="..\CafeRepository\01_CafeRepository.csproj">
       <Project>{f6dd560f-bf1c-4f69-892c-09bdd8e99f20}</Project>
-      <Name>CafeRepository</Name>
+      <Name>01_CafeRepository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
