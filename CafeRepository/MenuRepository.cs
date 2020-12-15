@@ -8,7 +8,7 @@ namespace CafeRepository
 {
     public class MenuRepository
     {
-        //methods CRD (no update needed)
+        //methods CRUD
 
         public List<MenuItem> _listOfMenuItems = new List<MenuItem>();
 

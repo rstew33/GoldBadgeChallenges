@@ -11,7 +11,7 @@ namespace _02_Claims
         static void Main(string[] args)
         {
             ClaimsUI claimsUI = new ClaimsUI();
-            // claimsUI.Run();
+            claimsUI.Run();
         }
     }
 }
