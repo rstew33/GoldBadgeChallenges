@@ -108,8 +108,8 @@ namespace _03_Badges
             badge.BadgeID = _badgesRepo.GetID();
 
             Console.WriteLine("What do you need to edit?" +
-                    "1. Add a badge\n" +
-                    "2. Edit a badge\n" +
+                    "1. Add a door\n" +
+                    "2. Remove a door\n" +
                     "3. Return to menu\n");
             string input = Console.ReadLine();
 

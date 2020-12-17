@@ -9,7 +9,7 @@ namespace CafeTestMethods
     public class TestMethods //AddMenuItemToList, GetMenuItems, UpdateExistingItem, RemoveMenuItems
     {
         private MenuRepository _menuRepo;
-            private MenuItem _menuItem;
+        private MenuItem _menuItem;
 
         [TestInitialize]
         public void Arrange()
@@ -19,7 +19,7 @@ namespace CafeTestMethods
 
             _menuRepo.AddMenuItem(_menuItem);
         }
-        [TestMethod] 
+        [TestMethod]
         public void AddMenuItemToList_ShouldAddItem()
         {
             List<MenuItem> _listOfMenuItems = new List<MenuItem>(); //arrange
@@ -34,7 +34,7 @@ namespace CafeTestMethods
         public void GetMenuItems_ShouldReturnItems()
         {
 
-            _menuRepo.AddMenuItem(_menuItem); 
+            _menuRepo.AddMenuItem(_menuItem);
             List<MenuItem> _listOfMenuItems = _menuRepo.GetMenuItems();
 
             Assert.IsNotNull(_listOfMenuItems);
