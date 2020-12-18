@@ -146,7 +146,7 @@ namespace _02_Claims
 
             bool isValid;
             string validText;
-            TimeSpan diff =  newClaim.DateOfIncident - newClaim.DateOfClaim;
+            TimeSpan diff = newClaim.DateOfClaim - newClaim.DateOfIncident;
             if (diff.Days <= 30)
             {
                 isValid = true;
