@@ -2,8 +2,6 @@ Challenge 1: Cafe
 Komodo Cafe
 Komodo cafe is getting a new menu. The manager wants to be able to create new menu items, update menu items, delete menu items, and receive a list of all items on the cafe's menu. She needs a console app.
 
- 
-
 The Menu Items:
 A meal number, so customers can say "I'll have the #5"
 A meal name
@@ -17,6 +15,12 @@ Create a Menu Class with properties, constructors, and fields.
 Create a MenuRepository Class that has methods needed.
 Create a Test Class for your repository methods. (You don't need to test your constructors or objects, just your methods)
 Create a Program file that allows the cafe manager to add, delete, and see all items in the menu list.
+
+Built with: C#
+
+Usage: Application can be used to add, edit, or delete menu items in a console application.
+
+Contributing: Andrew Steward
 
 
 
@@ -82,7 +86,11 @@ Your goal is to do the following:
 3. Create a Test Class for your repository methods.
 4. Create a Program file that allows a claims manager to manage items in a list of claims.
 
+Built with: C#
 
+Usage: Application can be used to add or pull claims for a console application. The application can add to a queue, take away from a queue, and verify if a claim is valid based on the above parameters.
+
+Contributing: Andrew Steward
 
 Challenge 3: Badges
 Komodo Insurance
@@ -167,3 +175,8 @@ Out of scope:
 You do not need to consider tying an individual badge to a particular user. Just the Badge # will do.
 
 Be sure to Unit Test your Repository methods.
+
+Built with: C#
+
+Usage: Application can be used to add a new badge for a console application. It can also add and edit door access for badges added using the application.
+Contributing: Andrew Steward

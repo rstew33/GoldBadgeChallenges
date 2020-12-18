@@ -24,7 +24,6 @@ namespace _02_ClaimsTest
             ClaimsRepo _claimsRepo = new ClaimsRepo();
             Queue<ClaimClass> _queueOfClaimClass = _claimsRepo.GetClaimClassQueue();
             Assert.IsNotNull(_queueOfClaimClass);
-
         }
     }
 }

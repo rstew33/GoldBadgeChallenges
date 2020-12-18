@@ -87,8 +87,15 @@ namespace _01_Cafe
 
             //ingredients
             List<string> newMenuIngredients = new List<string>();
-            Console.WriteLine("Enter the ingredients of the menu item (xxx, xxx) ");
-            newMenuIngredients.Add(Console.ReadLine());
+            Console.WriteLine("Enter the first ingredient for the item. Enter no value to continue: ");
+            string input = Console.ReadLine();
+            while (!string.IsNullOrEmpty(input))
+            {
+                newMenuIngredients.Add(input);
+                Console.WriteLine("Please add another ingredient");
+                input = Console.ReadLine();
+            }
+            // newMenuIngredients.Add(Console.ReadLine());
 
             //price
             Console.WriteLine("Enter the price of the item (x.xx)");
@@ -108,7 +115,7 @@ namespace _01_Cafe
                 Console.WriteLine("\nNumber: " + menuItem.ItemNumber); //number
                 Console.WriteLine("\nItem Item: " + menuItem.ItemName); //item
                 Console.WriteLine("\nItem Desc: " + menuItem.ItemDescription); //desc
-                foreach (string ingredient in menuItem._listOfIngredients) //ingredients
+                foreach (string ingredient in menuItem.ListIngredients) //ingredients
                 {
                     Console.WriteLine("\nItem ingredients: " + ingredient);
                 }
@@ -128,7 +135,7 @@ namespace _01_Cafe
                 Console.WriteLine("\nNumber: " + menuItem.ItemNumber); //number
                 Console.WriteLine("\nItem Item: " + menuItem.ItemName); //item
                 Console.WriteLine("\nItem Desc: " + menuItem.ItemDescription); //desc
-                foreach (string ingredient in menuItem._listOfIngredients) //ingredients
+                foreach (string ingredient in menuItem.ListIngredients) //ingredients
                 {
                     Console.WriteLine("\nItem ingredients: " + ingredient);
                 }
@@ -159,7 +166,7 @@ namespace _01_Cafe
             Console.WriteLine("Enter the item's new ingredients: ");
             List<string> newMenuIngredients = new List<string>();
             newMenuIngredients.Add(Console.ReadLine());
-            newMenuItem._listOfIngredients = newMenuIngredients;
+            newMenuItem.ListIngredients = newMenuIngredients;
 
             //price
             Console.WriteLine("Enter the item's new price:  ");

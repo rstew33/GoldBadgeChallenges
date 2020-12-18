@@ -41,7 +41,7 @@ namespace CafeRepository
                 oldMenuItem.ItemNumber = newMenuItem.ItemNumber;
                 oldMenuItem.ItemName = newMenuItem.ItemName;
                 oldMenuItem.ItemDescription = newMenuItem.ItemDescription;
-                oldMenuItem._listOfIngredients = newMenuItem._listOfIngredients;
+                oldMenuItem.ListIngredients = newMenuItem.ListIngredients;
                 oldMenuItem.ItemPrice = newMenuItem.ItemPrice;
                 return true;
             }

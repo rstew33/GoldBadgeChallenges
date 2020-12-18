@@ -102,18 +102,28 @@ namespace _03_Badges
         {
             Badge badge = new Badge();
             badge.DoorNames = new List<string>();
-
+            Dictionary<int, List<string>> badgeDict = _badgesRepo.GetDictionary();
             Console.Clear();
             Console.WriteLine("Please enter the badge number of the badge you need to edit: \n");
-            badge.BadgeID = _badgesRepo.GetID();
-
-            Console.WriteLine("What do you need to edit?" +
+            int input = _badgesRepo.GetID();
+            badge.BadgeID = input;
+            Console.Clear();
+            Console.WriteLine($"Badge: {badge.BadgeID} has access to these doors: \n");
+            List<string> result = new List<string>();
+            if (badgeDict.TryGetValue(input, out result))
+            {
+                foreach (string door in result)
+                {
+                    Console.WriteLine(door);
+                }
+            }
+            Console.WriteLine($"\nWhat do you need to edit?\n" +
                     "1. Add a door\n" +
                     "2. Remove a door\n" +
                     "3. Return to menu\n");
-            string input = Console.ReadLine();
+            string input2 = Console.ReadLine();
 
-            switch (input)
+            switch (input2)
             {
                 case "1":
                     AddDoorEdit(badge.BadgeID);
@@ -122,9 +132,11 @@ namespace _03_Badges
                     RemoveDoorEdit(badge.BadgeID);
                     break;
                 case "3":
+                    Console.Clear();
                     Menu();
                     break;
                 default:
+                    Console.Clear();
                     Menu();
                     break;
             }
@@ -156,10 +168,12 @@ namespace _03_Badges
 
                 foreach (string door in badge.Value)
                 {
-                    Console.WriteLine(door);
+                    Console.WriteLine("Door: " + door);
                 }
             }
-            Console.ReadKey();
+            Console.WriteLine("\nPress any key to continue");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }

@@ -22,13 +22,9 @@ namespace CafeTestMethods
         [TestMethod]
         public void AddMenuItemToList_ShouldAddItem()
         {
-            List<MenuItem> _listOfMenuItems = new List<MenuItem>(); //arrange
-
             _menuRepo.AddMenuItem(_menuItem); //act
-
-            int numberofItems = _listOfMenuItems.Count;
-
-            Assert.IsNotNull(numberofItems); //assert
+            MenuItem contentFromMenu = _menuRepo.GetMenuByID(1);
+            Assert.IsNotNull(contentFromMenu); //assert
         }
         [TestMethod]
         public void GetMenuItems_ShouldReturnItems()

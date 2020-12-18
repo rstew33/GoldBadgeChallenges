@@ -12,8 +12,7 @@ namespace CafeRepository
         public int ItemNumber { get; set; }
         public string ItemName { get; set; }
         public string ItemDescription { get; set; }
-
-        public List<string> _listOfIngredients = new List<string>();
+        public List<string> ListIngredients { get; set; }
         public double ItemPrice { get; set; }
 
         public MenuItem() { }
@@ -23,7 +22,7 @@ namespace CafeRepository
             ItemNumber = itemNumber;
             ItemName = itemName;
             ItemDescription = itemDescription;
-            _listOfIngredients = itemIngredients;
+            ListIngredients = itemIngredients;
             ItemPrice = itemPrice;
         }
 
